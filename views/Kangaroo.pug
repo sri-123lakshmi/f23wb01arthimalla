@@ -9,3 +9,8 @@ block content
                 div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Kangaroo_breed}                
                 div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Kangaroo_price}
                 hr
+    script.
+        function buy(itemNo)
+        {
+            alert(`You purchased Item ${itemNo+1}`)
+        }
